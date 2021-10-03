@@ -25,6 +25,11 @@ Continue(){
 
 }
 
+menu_open(){
+
+    cy.get('[data-name="menu-2"]').click()
+}
+
 }
 
 export default Loginpage

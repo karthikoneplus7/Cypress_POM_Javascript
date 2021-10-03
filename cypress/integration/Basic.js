@@ -1,7 +1,7 @@
 /// <reference types='cypress'/>
 
 import Loginpage from "./PageObject/Loginpage"
-
+import Login from "./PageObject/TrialScript/Login"
 
 
 describe('Amazon login',() => {
@@ -18,6 +18,8 @@ describe('Amazon login',() => {
     it('Credent',function () {
 
         const login = new Loginpage();
+        const L1 = new Login();
+        L1.
 
         login.Navigate()
         cy.get('[id="nav-link-accountList"]').click()
