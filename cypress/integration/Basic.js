@@ -6,24 +6,18 @@ import Login from "./PageObject/TrialScript/Login"
 
 describe('Amazon login',() => {
 
-    before ('try',() => {
-
-        cy.fixture('Cred').then(function (test1) {
-
-            this.testdata = test1
-    
-        })
+   
         
-    })
+  
     it('Credent',function () {
 
-        const login = new Loginpage();
+        const login1 = new Loginpage();
         const L1 = new Login();
-        L1.
-
-        login.Navigate()
+        
+       
+       login1.Navigate()
         cy.get('[id="nav-link-accountList"]').click()
-        login.Email().type(this.testdata.email_id)
+        login1.Email().type('Karthik')
 
 
     })
