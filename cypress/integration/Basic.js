@@ -18,7 +18,7 @@ describe('Amazon login',() => {
        login1.Navigate()
         cy.get('[id="nav-link-accountList"]').click()
         login1.Email().type('Karthik')
-
+        cy.screenshot()
 
     })
 })
